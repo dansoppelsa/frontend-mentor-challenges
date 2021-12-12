@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          'sans': ["Open Sans", 'Helvetica', 'Arial', 'sans-serif'],
+          'heading': ["Poppins", 'Helvetica', 'Arial', 'sans-serif'],
+        },
+        extend: {
+          backgroundImage: {
+            'mobile-bg': "url('/images/bg-mobile.svg')",
+            'desktop-bg': "url('/images/bg-desktop.svg')",
+          },
+          colors: {
+            'violet': "hsl(257, 40%, 49%)",
+            'soft-magenta': "hsl(300, 69%, 71%)",
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-violet bg-mobile-bg lg:bg-desktop-bg bg-no-repeat bg-right-top bg-contain lg:bg-cover text-white p-10">
+  <div class="flex flex-col lg:flex-row lg:items-center">
+    <div class="lg:w-3/5 lg:px-6">
+      <div class="pb-20">
+        <img src="./images/logo.svg" alt="Huddle" class="w-40 lg:w-64" />
+      </div>
+      <img src="./images/illustration-mockups.svg" class="mx-auto max-w-sm w-full max-w-none" alt="" />
+    </div>
+    <div class="text-center lg:text-left pt-20 lg:w-2/5 lg:px-12">
+      <h2 class="text-3xl lg:text-5xl font-bold leading-relaxed lg:leading-tight font-heading">
+        <div>Build The Community</div>
+        <div>Your Fans Will Love</div>
+      </h2>
+
+      <div class="text-xl tracking-wide mt-6 mb-10">
+        Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+        Create connections with your users as you engage in genuine discussion.
+      </div>
+
+      <button class="bg-white text-violet py-3 px-24 lg:px-16 lg:py-4 rounded-full shadow-md shadow-gray-700 hover:bg-soft-magenta hover:text-white">
+        Register
+      </button>
+
+    </div>
+  </div>
+
+  <div class="flex items-center justify-center pt-20 lg:justify-end">
+    <a href="#" class="border border-white rounded-full leading-none w-12 h-12 flex justify-center items-center mr-5"><i class="fa fa-facebook"></i></a>
+    <a href="#" class="border border-white rounded-full leading-none w-12 h-12 flex justify-center items-center mr-5"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="border border-white rounded-full leading-none w-12 h-12 flex justify-center items-center mr-5"><i class="fa fa-instagram"></i></a>
+  </div>
+
+
+
+</body>
+</html>
